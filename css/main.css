@@ -1,0 +1,593 @@
+/*Originally made by: Lotzky*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    margin: 0;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    padding-top: 75px;
+    background-color: #e0e0e0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 130%;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+p {
+    line-height: 28px;
+}
+
+.row {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px 0 60px;
+}
+
+.col {
+    margin: 0;
+    padding: 0;
+}
+
+/*================================HEADER=================================*/
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    transition: top .2s ease-in-out;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.head-container-up {
+    top: -75px;
+    z-index: 99999;
+}
+
+.item {
+    display: flex;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.items-list {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    animation-delay: .5s;
+}
+.items-list:nth-of-type(2) {
+	 animation-delay: .7s;
+}
+.items-list:nth-of-type(3) {
+	 animation-delay: .9s;
+}
+.items-list:last-of-type {
+	 animation-delay: 1.1s;
+}
+
+.items-list a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, .5);
+    display: block;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.items-list a:hover {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 4px solid #fff;
+}
+
+a.active {
+    color: #fff;
+    border-bottom: 4px solid #fff;
+}
+
+
+/*=====================BANNER=============================*/
+
+.welcome-wrapper {
+    background-image: url(/img/me.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.welcome-inner {
+    background-color: rgba(117, 117, 117, .7);
+    height: inherit;
+}
+.col.col-12 {
+	animation-delay: .2s;
+}
+h1.title {
+    margin-top: 20%;
+    font-size: 200%;
+    color: #fff;
+}
+
+.title-desc {
+    padding-bottom: 10px;
+    color: rgba(250, 250, 250, .7);
+    line-height: 25px;
+    font-size: 125%;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.btn-link {
+    border: 1px solid rgba(250, 250, 250, .5);
+    border-radius: 50px;
+    padding: 13px 26px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 70%;
+    letter-spacing: 2px;
+    transition: background-color .5s ease-in;
+}
+
+.btn-link:hover {
+    border: 1px solid rgba(250, 250, 250, 1);
+    border-radius: 50px;
+    background-color: rgba(250, 250, 250, .3);
+    transition: background-color .5s ease-out;
+}
+.btn-wrapper{
+	margin: 0 auto;
+}
+
+
+/*================================WHO ===============*/
+
+#who {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.row.full {
+    padding: 0;
+}
+
+.row.full.first {
+    background-color: #424242;
+    color: rgba(250, 250, 250, .5);
+    padding: 15px 15px 30px 15px;
+}
+
+.row.full.second {
+    background-color: #616161;
+    color: rgba(250, 250, 250, .5);
+    padding: 15px 15px 30px 15px;
+}
+
+.row.full.third {
+    background-color: #757575;
+    color: rgba(250, 250, 250, .5);
+    padding: 15px 15px 30px 15px;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.me-title {
+    font-size: 150%;
+    color: #fff;
+}
+
+.me-title,
+.me-desc,
+.full .btn-link {
+    margin: 50px;
+}
+
+
+/*================================WHAT ==================*/
+
+#what {
+    background-color: #9e9e9e;
+    height: auto;
+    padding-bottom: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.what-title {
+    padding: 50px 0 25px 0;
+    color: #fff;
+    font-size: 200%;
+}
+
+.what-title-desc {
+    color: rgba(250, 250, 250, .8);
+    padding-bottom: 15px;
+}
+
+.what-items-title i {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.what-items-title {
+    color: #fff;
+    font-size: 120%;
+    padding: 10px;
+}
+
+.what-items-desc {
+    color: rgba(250, 250, 250, .8);
+    margin-left: 50px;
+    padding: 5px 20px;
+}
+
+.col-6 {
+    background-color: rgba(33, 33, 33, .1);
+    border: 1px solid rgba(33, 33, 33, .1);
+}
+
+div.row.btm {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+/*======================================contact================================*/
+
+#keep {
+    color: #333;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.keep-title {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-size: 200%;
+}
+
+.keep-desc {
+    padding-bottom: 5px;
+}
+
+
+/*===========FORM =============*/
+
+label {
+    font-size: 125%;
+    font-weight: bolder;
+    clear: both;
+}
+
+.name {
+    float: left;
+    width: 50%;
+}
+
+.email {
+    float: left;
+    width: 50%;
+}
+
+input[type=text],
+input[type=email] {
+    width: 90%;
+    height: 30px;
+    padding: 10px 5px;
+    font-size: 20px;
+    border: 1px solid rgba(51, 51, 51, .3);
+    border-radius: 5px;
+    clear: both;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #333;
+    outline: none;
+}
+
+textarea {
+    width: 96%;
+    height: 80px;
+    border: 1px solid rgba(51, 51, 51, .3);
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+button[type=button] {
+    width: 97%;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+button[type=button]:hover {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 1);
+    transition: all .5s ease-in-out;
+}
+
+
+/*location*/
+
+.social {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.social-items {
+    display: inline-block;
+    width: calc(100% / 6);
+}
+
+.social-items a {
+    padding: 10px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    transition: all .5s linear;
+}
+
+.social-items:first-child a:hover {
+    background-color: rgba(59, 89, 153, 1);
+    color: #fff;
+    border-bottom: 2px solid rgba(59, 89, 153, 1);
+    transition: all .5s linear;
+}
+
+.social-items:nth-child(2) a:hover {
+    background-color: rgba(85, 172, 238, 1);
+    color: #fff;
+    border-bottom: 2px solid rgba(85, 172, 238, 1);
+    transition: all .5s linear;
+}
+
+.social-items:nth-child(3) a:hover {
+    background-color: rgba(228, 64, 95, 1);
+    color: #fff;
+    border-bottom: 2px solid rgba(228, 64, 95, 1);
+    transition: all .5s linear;
+}
+
+.social-items:nth-child(4) a:hover {
+    background-color: rgba(65, 0, 147, 1);
+    color: #fff;
+    border-bottom: 2px solid rgba(65, 0, 147, 1);
+    transition: all .5s linear;
+}
+
+.social-items:last-child a:hover {
+    background-color: rgba(0, 119, 181, 1);
+    color: #fff;
+    border-bottom: 2px solid rgba(0, 119, 181, 1);
+    transition: all .5s linear;
+}
+
+
+/*============================footer==================================*/
+
+footer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+footer .row {
+    display: block;
+    margin: 0 auto;
+    background-color: #121212;
+    color: #fff;
+    padding-top: 10px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #9575cd;
+    opacity: 1;
+}
+
+footer i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+/*queries*/
+
+@media screen and (min-width: 1440px) {
+    .items-list a {
+        font-size: 80%;
+    }
+    h1.title {
+        font-size: 300%;
+    }
+    .title-desc {
+        padding-bottom: 50px;
+        color: rgba(250, 250, 250, .7);
+        line-height: 50px;
+        font-size: 150%;
+        padding: 35px 35px 25px 35px;
+    }
+    .row.full {
+    	padding-bottom: 15px;
+    }
+    .btn-link {
+        padding: 23px 46px;
+        font-size: 80%;
+
+    }
+    .me-title, .what-title, .keep-title{
+    	font-size: 300%;
+    	padding: 35px 35px 25px 35px;
+    }
+    .what-items-title {
+    	font-size: 250%;
+    	padding: 35px 35px 25px 35px;
+    }
+    .me-desc, .what-title-desc, .what-items-desc, .keep-desc, .contact h2 {
+    	line-height: 40px;
+    	font-size: 150%;
+    	padding: 35px 35px 15px 35px;
+    }
+    .contact p {
+    	font-size: 150%;
+    	margin-left: 50px;
+    }
+    .contact a {
+    	font-size: 200%;
+    }
+    label {
+    	font-size: 150%;
+    }
+    input[type=text], input[type=email], button[type=button] {
+    	height: 50px;
+    }
+    textarea {
+    	height: 120px;
+    }
+    footer p{
+		font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+	.item {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+	h1.title {
+    font-size: 180%;
+
+}
+
+.title-desc {
+    padding-bottom: 15px;
+        line-height: 25px;
+    font-size: 115%;
+
+}
+
+.btn-link {
+    border: 1px solid rgba(250, 250, 250, .5);
+    border-radius: 50px;
+    padding: 13px 26px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 70%;
+    letter-spacing: 2px;
+    transition: background-color .5s ease-in;
+}
+}
+@media screen and (max-width: 480px) {
+
+.row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col {
+    padding:0;
+}
+.row.full.first {
+    padding: 5px 5px 10px 5px;
+}
+
+.row.full.second {
+    background-color: #616161;
+    color: rgba(250, 250, 250, .5);
+    padding: 15px 15px 30px 15px;
+}
+
+.row.full.third {
+    background-color: #757575;
+    color: rgba(250, 250, 250, .5);
+    padding: 15px 15px 30px 15px;
+}
+.items-list {
+
+    margin: 0 auto;
+    width: 100%;
+    height: 0;
+}
+
+	a.active {
+    border-bottom: none;
+}
+	.row img {
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.email , .name {
+	width: 100%;
+	float: none;
+}
+input[type=text], input[type=email] {
+	width: 100%;
+}
+textarea {
+	width: 100%;
+}
+button[type=button]{
+	margin-bottom: 20px;
+	width: 100%;
+}
+.btn-link {
+	margin: 0 auto;
+}
+}
