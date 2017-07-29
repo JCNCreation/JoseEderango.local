@@ -543,21 +543,6 @@ footer i:hover {
 .col {
     padding:0;
 }
-.row.full.first {
-    padding: 5px 5px 10px 5px;
-}
-
-.row.full.second {
-    background-color: #616161;
-    color: rgba(250, 250, 250, .5);
-    padding: 15px 15px 30px 15px;
-}
-
-.row.full.third {
-    background-color: #757575;
-    color: rgba(250, 250, 250, .5);
-    padding: 15px 15px 30px 15px;
-}
 .items-list {
 
     margin: 0 auto;
