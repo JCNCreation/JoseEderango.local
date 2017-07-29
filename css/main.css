@@ -112,7 +112,7 @@ a.active {
 /*=====================BANNER=============================*/
 
 .welcome-wrapper {
-    background-image: url(/img/me.jpg);
+    background-image: url(../img/me.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
