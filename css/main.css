@@ -547,7 +547,6 @@ footer i:hover {
 
     margin: 0 auto;
     width: 100%;
-    height: 0;
 }
 
 	a.active {
@@ -571,8 +570,5 @@ textarea {
 button[type=button]{
 	margin-bottom: 20px;
 	width: 100%;
-}
-.btn-link {
-	margin: 0 auto;
 }
 }
