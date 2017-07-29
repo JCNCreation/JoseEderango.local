@@ -559,14 +559,14 @@ footer i:hover {
     box-sizing: border-box;
 }
 .email , .name {
-	width: 100%;
+	width: 97%;
 	float: none;
 }
 input[type=text], input[type=email] {
 	width: 100%;
 }
 textarea {
-	width: 100%;
+	width: 97%;
 }
 button[type=button]{
 	margin-bottom: 20px;
